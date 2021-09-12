@@ -1,0 +1,48 @@
+.movie-form {
+    margin: 2em auto;
+    padding-top: 6em;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+@media screen and (max-width: 600px) {
+    .movie-form {
+        flex-direction: column;
+        padding-top: 3em;
+    }
+}
+
+label, input {
+    padding: .3em .5em;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 7px;
+}
+
+button {
+    outline: none;
+    cursor: pointer;
+    padding: .3em .5em;
+    border-radius: 7px;
+    background-color: hsl(220, 13%, 18%);
+    color: whitesmoke;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    transition: all .3s;
+}
+
+button:hover, button:focus {
+    background-color: hsl(220, 13%, 38%);
+}
+
+.movie-list {
+    width: 80%;
+    margin: 2em auto;
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-items: center;
+}
