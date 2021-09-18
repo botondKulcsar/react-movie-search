@@ -9,7 +9,6 @@ const MovieCard = ({ movie }) => {
                 <h3 className="card--title">{ movie.title }</h3>
                 <p><small>Release date: { movie.release_date }</small></p>
                 <p><small>Rating: { movie.vote_average }</small></p>
-                <p className="card--desc">{ movie.overview.length < 200 ? movie.overview : movie.overview.slice(0, 196) + '...'}</p>
             </div>
         </div>
     )
